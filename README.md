@@ -1,6 +1,7 @@
 ﻿# SwiftDocs Documentation System
 ![overview.png](Assets/overview.png)
 
+**Version:** v1.2.1
 ## Key Features
 >  ❗NOTE
 > 
