@@ -1,10 +1,6 @@
 ﻿# SwiftDocs Documentation System
 ![overview.png](Assets/overview.png)
 
-## About the Project
-
-SwiftDocs is a lightweight documentation system with multilingual support and a dynamic content structure. It is designed for creating technical documentation, guides, and API references, with the ability to switch between languages and themes.
-
 ## Key Features
 >  ❗NOTE
 > 
@@ -16,18 +12,21 @@ SwiftDocs is a lightweight documentation system with multilingual support and a 
 >* Text formatting with colors and styles
 
 ## Quick Start
+SwiftDocs was created for projects that need a clean and reliable documentation website without unnecessary complexity. It does not rely on build tools, generators, or heavy frameworks the site is fully static and works seamlessly with GitHub Pages. You can deploy it by simply uploading the files and enabling Pages in your repository.
+
+The documentation structure is designed to stay clear and maintainable as projects grow. SwiftDocs supports multiple languages, uses a dynamic hierarchical navigation menu, and renders Markdown content in a consistent and readable way. Themes can be switched between light and dark modes, and customization is straightforward, without the need for JavaScript frameworks or complex tooling.
+
+This approach makes SwiftDocs suitable for a wide range of projects that need structured, easy-to-maintain documentation from small repositories to larger, long-living projects.
+The project is fully ready to deploy on GitHub Pages:
 
 ### For GitHub Pages
 
-The project is fully ready to deploy on GitHub Pages:
-
-1. **Upload the files to your GitHub repository**
-2. **Enable GitHub Pages in the repository settings**:
-
-    * Settings → Pages → Build and deployment
-    * Source: "Deploy from a branch"
-    * Branch: main (or your default branch), folder: `/root`
-3. **Access the site at**: `https://your-username.github.io/your-repository`
+1. Upload the files to your GitHub repository
+2. Enable GitHub Pages in the repository settings:
+   Settings → Pages → Build and deployment
+   Source: Deploy from a branch
+   Branch: main (or your default branch), folder: /root
+3. Open the site at: https://your-username.github.io/your-repository
 
 ### For Local Development
 
@@ -66,7 +65,7 @@ http://localhost:8000
 
 ### Adding a New Language
 
-1. Edit `languages.yaml`:
+1. Edit `config/languages.yaml`:
 
 ```yaml
 - code: fr
@@ -82,7 +81,7 @@ md/fr/
 └── tutorial_1.md
 ```
 
-3. Add translations to `ui.yaml`:
+3. Add translations to `config/ui.yaml`:
 
 ```yaml
 documentation:
@@ -95,7 +94,7 @@ examples:
 
 ### Configuring the Documentation Menu
 
-Edit `docs.yaml` to modify the menu structure:
+Edit `config/docs.yaml` to modify the menu structure:
 
 ```yaml
 - key: new_section
@@ -115,6 +114,7 @@ The project includes two themes:
 * `light.css` — light theme
 
 Theme selection is saved in `localStorage`.
+
 
 ## License
 

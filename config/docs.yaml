@@ -4,14 +4,16 @@
 # - titles: localized titles for different languages
 # - file: markdown filename for the section content
 # - branch: parent section key (optional, for nested structure)
-# - detail: content for detail panel with optional color formatting ?{#color}
+# - detail_dark: content for detail panel (dark theme) with optional color formatting ?{#color}
+# - detail_light: content for detail panel (light theme) with optional color formatting ?{#color}
 
 - key: overview
   titles:
     en: Introduction
     de: Herzlich Willkommen
   file: overview.md
-  detail: "@[#fff5c4[Data:]] 14.09.2025 \n @[#fff5c4 [Author:]] NightLum Studio"
+  detail_dark: "@[#fff5c4[Data:]] 14.09.2025 \n @[#fff5c4[Author:]] NightLum Studio"
+  detail_light: "@[#4a5568[Data:]] 14.09.2025 \n @[#4a5568[Author:]] NightLum Studio"
 
 - key: tutorial_1
   titles:
