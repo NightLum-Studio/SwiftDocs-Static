@@ -1,0 +1,82 @@
+body.home-active .sidebar,
+body.home-active .content-panel,
+body.home-active .detail-panel {
+  display: none;
+}
+
+body.home-active .topbar {
+  display: none;
+}
+
+.home-screen {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: #161618;
+  z-index: 900;
+  padding: 120px 20px 40px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+body.home-active .home-screen {
+  display: flex;
+}
+
+.home-panel {
+  max-width: 720px;
+  width: 100%;
+  background: #f7f4ea;
+  color: #1f1f22;
+  border-radius: 16px;
+  padding: 36px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+}
+
+.home-title {
+  margin: 0 0 8px 0;
+  font-size: 32px;
+}
+
+.home-subtitle {
+  margin: 0 0 24px 0;
+  color: #4a5568;
+}
+
+.home-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.home-button {
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #1f2937;
+  font-size: 16px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.home-button:hover {
+  transform: translateY(-1px);
+  border-color: #64748b;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+.home-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 640px) {
+  .home-panel {
+    padding: 24px;
+  }
+
+  .home-title {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,36 @@
+# Defines the documentation structure and navigation menu.
+# variables: theme-aware color variables for detail text.
+# docs: documentation items.
+# yaml-language-server: $schema=schemas/docs.schema.json
+
+variables:
+  accent:
+    dark: "#fff5c4"
+    light: "#4a5568"
+  muted:
+    dark: "#bdb08a"
+    light: "#6b7280"
+
+docs:
+  - key: overview
+    titles:
+      en: Introduction
+      de: Herzlich Willkommen
+    file: overview.md
+    detail: "@[{$accent}[Data:]] 14.09.2025 \n @[{$accent}[Author:]] NightLum Studio"
+
+  - key: tutorial_1
+    titles:
+      en: Tutorial
+      de: Tutorial
+    file: tutorial_1.md
+    branch: overview
+    detail: "@[{$accent}[Data:]] 07.02.2026 \n @[{$accent}[Author:]] NightLum Studio"
+
+  - key: tutorial_2
+    titles: 
+      en: Tutorial 2
+      de: Tutorial 2
+    file: tutorial_2.md
+    branch: overview
+    detail: "@[{$accent}[Data:]] 07.02.2026 \n @[{$accent}[Author:]] NightLum Studio"

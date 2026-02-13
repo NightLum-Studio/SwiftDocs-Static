@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui>
+  <documentation>
+    <t lang="en">Documentation</t>
+    <t lang="de">Dokumentation</t>
+  </documentation>
+  <home>
+    <t lang="en">Home</t>
+    <t lang="de">Startseite</t>
+  </home>
+  <examples>
+    <t lang="en">Examples</t>
+    <t lang="de">Beispiele</t>
+  </examples>
+</ui>

@@ -5,10 +5,10 @@
   # - name: display name for the language selector dropdown
   
   - code: en
-    path: md/en
+    path: en
     name: English
     
   - code: de
-    path: md/de
+    path: de
     name: Deutsch
     

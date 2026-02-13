@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<docs>
+  <variables>
+    <var name="accent" dark="#fff5c4" light="#4a5568" />
+    <var name="muted" dark="#bdb08a" light="#6b7280" />
+  </variables>
+
+  <items>
+    <doc key="Introduction"
+         file="Introduction.md"
+         title_en="Introduction"
+         detail="@[{$accent}[Data:]] 14.09.2025 
+                &#10; @[{$accent}[Author:]] NightLum Studio 
+                &#10; @[{$accent}[Warnig:]] This project is still in development!
+                &#10; @[{$accent}[Version:]] 1.4.0" />
+    <doc key="Быстрый старт"
+         file="Getting-Started.md"
+         branch="Introduction"
+         title_en="Getting-Started"
+         detail="@[{$accent}[Data:]] 07.02.2026 
+                &#10; @[{$accent}[Author:]] NightLum Studio 
+                &#10; @[{$accent}[Warnig:]] This project is still in development!
+                &#10; @[{$accent}[Version:]] 1.4.0" />
+    <doc key="Core Capabilities"
+        file="Core-Capabilities.md"
+        branch="Introduction" 
+        title_en="Core Capabilities"
+        detail="@[{$accent}[Data:]] 13.02.2026 
+              &#10; @[{$accent}[Author:]] NightLum Studio 
+              &#10; @[{$accent}[Warnig:]] This project is still in development!
+              &#10; @[{$accent}[Version:]] 1.4.0" />
+    <doc key="Languages Configuration"
+         file="Languages-Configuration.md"
+         branch="Introduction"
+         title_en="Languages Configuration"
+         detail="@[{$accent}[Data:]] 13.02.2026 
+              &#10; @[{$accent}[Author:]] NightLum Studio 
+              &#10; @[{$accent}[Warnig:]] This project is still in development!
+              &#10; @[{$accent}[Version:]] 1.4.0"/>
+  </items>
+</docs>

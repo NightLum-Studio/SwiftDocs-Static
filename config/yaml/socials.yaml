@@ -1,0 +1,12 @@
+# Social links shown at the bottom of the sidebar.
+
+socials:
+  - name: Discord
+    url: https://discord.gg/CftKPtxfZ3
+    icon: Discord
+  - name: Patreon
+    url: https://patreon.com/NightLumStudio
+    icon: Patreon
+  - name: GitHub
+    url: https://github.com/NightLum-Studio/SwiftDocs-Static
+    icon: GitHub

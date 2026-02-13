@@ -1,6 +1,7 @@
 ﻿# Default ignored files
 /shelf/
 /workspace.xml
+.idea/
 # Rider ignored files
 /.idea.SwiftDocs.iml
 /contentModel.xml

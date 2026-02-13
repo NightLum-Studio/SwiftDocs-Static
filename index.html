@@ -6,42 +6,79 @@
 <title>SwiftDocs</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.2.0/github-markdown.min.css">
 <link id="theme-style" rel="stylesheet" href="css/dark.css">
+<link rel="stylesheet" href="css/home.css">
 </head>
 <body>
 
 <div class="sidebar">
-  <h2 id="sidebar-title" >documentation</h2>
+  <div class="sidebar-logo">SwiftDocs</div>
+  <div class="search-box search-box-sidebar">
+    <img class="search-icon" src="Assets/Icons/search_light.svg" alt="" />
+    <input id="search-input" class="search-input" type="text" placeholder="Search" />
+  </div>
   <div id="menu"></div>
+  <div class="sidebar-socials" id="sidebar-socials"></div>
 </div>
+
+<div class="sidebar-backdrop" id="sidebar-backdrop"></div>
 
 <div class="content-panel markdown-body" id="content">
   <p>Loading...</p>
 </div>
 
+<div class="content-nav" id="content-nav">
+  <button class="nav-btn" id="nav-prev" type="button" aria-label="Previous section">
+    <span class="nav-icon nav-back"></span>
+  </button>
+  <button class="nav-btn" id="nav-next" type="button" aria-label="Next section">
+    <span class="nav-icon nav-forward"></span>
+  </button>
+</div>
+
 <div class="topbar">
-  <div class="logo">SwiftDocs</div>
+  <div class="logo-group">
+    <div class="logo">SwiftDocs</div>
+    <a href="#" id="nav-home" class="home-link">Home</a>
+  </div>
   <nav>
-    <a href="#" id="nav-home">Home</a>
-    <a href="#" id="nav-examples">documentation</a>
-    <a href="#">API</a>
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider">
+        <span class="icon moon"></span>
+        <span class="icon sun"></span>
+      </span>
+    </label>
     <div style="position: relative;">
       <select id="lang-select"></select>
       <div class="lang-icon" onclick="document.getElementById('lang-select').click()"></div>
     </div>
-    <label class="switch">
-      <input type="checkbox" id="theme-toggle">
-      <span class="slider"></span>
-    </label>
   </nav>
 </div>
 
+<div class="home-screen" id="home-screen">
+  <div class="home-panel">
+    <h1 class="home-title">Choose documentation</h1>
+    <p class="home-subtitle"></p>
+    <div class="home-buttons" id="home-buttons"></div>
+  </div>
+</div>
+
 <div class="detail-panel">
-  <h2>Details</h2>
+  <h3>Details</h3>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked-admonition-extension@0.0.4/dist/index.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/js-yaml/dist/js-yaml.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/text-format.js"></script>
+<script src="js/app-base.js"></script>
+<script src="js/sidebar.js"></script>
+<script src="js/home.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/socials.js"></script>
+<script src="js/lang.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/app.js"></script>
 
 </body>
 </html>

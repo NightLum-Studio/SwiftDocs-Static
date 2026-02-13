@@ -1,0 +1,6 @@
+# Start page configuration.
+# Each project becomes a button on the home screen.
+
+projects:
+  - name: SwiftDocs
+    path: md/SwiftDocs
